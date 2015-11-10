@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Fango!!</title>
+        <script type ="text/javascript">
+        	var a;
+        	var b;
+        	var c;
+        	function pow(){
+        		c=document.getElementById("textbox");
+ 				var numero = Number(c.value);
+                alert(numero);
+ 
+         	};
+        	function inicio(){
+        		a=document.getElementById("caja");
+        		b=document.getElementById("buttoncirris");
+        		c=document.getElementById("textbox");
+        		b.addEventListener("click", pow);
+        	};
+        </script>
+    </head>
+    <body>
+    	<input id="textbox" type="text" Value="Hola"/>
+    	<input id="buttoncirris" type="button" Value="Press me"/>
+    	<div id="caja">Caja</div>
+    	<div id = "caja2">Caja2</div>        
+        
+    </body>
+    <script type ="text/javascript">
+        	inicio();
+        </script>
+
+</html>

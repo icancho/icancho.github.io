@@ -12,7 +12,6 @@
 // var pikachu = Pokemon("pikachu","Electrico",100,55);
 // var bulbasaur = Pokemon("bulbasaur","tierra",90,50);
 
-
 // document.write(pikachu.namep+"\n");
 // document.write(bulbasaur.namep);
 
