@@ -1,5 +1,10 @@
 var dibujo, lienzo;
 function inicio(){
+	celdas = document.getElementById("celdas");
+	go = document.getElementById("go");
+
+	go.addEventListener("click",dibujargrillas);
+
 	dibujo = document.getElementById("dibujito");
 	lienzo = dibujo.getContext("2d");
 	lienzo.moveTo(0,0);
@@ -9,8 +14,6 @@ function inicio(){
 	lienzo.lineTo(0,0);
 	lienzo.strokeStyle = "#F00";
 	lienzo.stroke();
-
-	dibujargrillas(lienzo);
 // circulos
 	lienzo.beginPath();
 	lienzo.	strokeStyle = "#00F";
@@ -22,9 +25,10 @@ function inicio(){
 
 }
 function dibujargrillas(l){
+	var l = lienzo
 	var ancho = 300, alto = 300;
-	var lineatop = 10
-	var lineastart = 30
+	var lineatop = celdas.value;
+	var lineastart = ancho / lineatop
 
 	lienzo.strokeStyle = "#397B0E";
 	for (linea = 0; linea <= lineatop; linea++ ){

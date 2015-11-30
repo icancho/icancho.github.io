@@ -42,6 +42,8 @@ if (opcionUsuario ==piedra){
 	}else if(opcionMaquina == tijera) {
 		alert("empate")
 	}		
+}else if (opcionUsuario == undefined){
+	alert("¿nada? ninguno?")
 }else{
 	alert("¿nada?")
 }
